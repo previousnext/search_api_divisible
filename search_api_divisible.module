@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Adds core functionality for search_api_divisible module.
+ */
+
+/**
+ * Implements hook_search_api_alter_callback_info().
+ */
+function search_api_divisible_search_api_alter_callback_info() {
+  $callbacks = array();
+  $callbacks['search_api_divisible_by_two'] = array(
+    'name' => t('Divisible by two'),
+    'description' => t('Flags the node as even or odd.'),
+    'class' => 'SearchApiDivisibleByTwo',
+  );
+  return $callbacks;
+}

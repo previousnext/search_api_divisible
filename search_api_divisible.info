@@ -1,0 +1,5 @@
+name = Search API Divisible
+description = Custom search processor for checking divisible by two.
+core = 7.x
+dependencies[] = search_api
+files[] = includes/processor_divisible_by_two.inc
